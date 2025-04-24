@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marketplace Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f4f5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .card-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+
+    .seller-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .seller-info img {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+
+    .seller-name {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .price-stock {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .price {
+      font-size: 16px;
+      font-weight: bold;
+      color: #1a8f1a;
+    }
+
+    .stock-status {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .rating {
+      margin: 10px 0;
+      color: #FFD700;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .btn-cart {
+      background-color: #2e7d32;
+      color: white;
+    }
+
+    .btn-details {
+      background-color: #e0e0e0;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card-row">
+  <!-- Card 1 -->
+  <div class="card">
+    <img src="images/dc.jpg" alt="Dairy Cattles">
+    <div class="card-content">
+      <div class="card-title">Dairy Cattles</div>
+      <div class="seller-info">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Seller">
+        <span class="seller-name">Moyin Farmer • Kano</span>
+      </div>
+      <div class="price-stock">
+        <span class="price">N3500.00/kg</span>
+        <span class="stock-status">In Stock</span>
+      </div>
+      <div class="rating">★★★★☆ (128 reviews)</div>
+      <div class="buttons">
+        <button class="btn btn-cart" onclick="addToCart('Dairy Cattles')">Add to Cart</button>
+        <button class="btn btn-details">View Details</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Duplicate cards for layout -->
+  <div class="card">
+    <img src="images/dg.jpg" alt="Dairy Cattles">
+    <div class="card-content">
+      <div class="card-title">Dairy Goats</div>
+      <div class="seller-info">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Seller">
+        <span class="seller-name">Moyin Farmer • Kano</span>
+      </div>
+      <div class="price-stock">
+        <span class="price">N3500.00/kg</span>
+        <span class="stock-status">In Stock</span>
+      </div>
+      <div class="rating">★★★★☆ (128 reviews)</div>
+      <div class="buttons">
+        <button class="btn btn-cart" onclick="addToCart('Dairy Goats')">Add to Cart</button>
+        <button class="btn btn-details">View Details</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="images/pig.jpg" alt="Dairy Cattles">
+    <div class="card-content">
+      <div class="card-title">pigs</div>
+      <div class="seller-info">
+        <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Seller">
+        <span class="seller-name">Moyin Farmer • Kano</span>
+      </div>
+      <div class="price-stock">
+        <span class="price">N3500.00/kg</span>
+        <span class="stock-status">In Stock</span>
+      </div>
+      <div class="rating">★★★★☆ (128 reviews)</div>
+      <div class="buttons">
+        <button class="btn btn-cart" onclick="addToCart('Pigs')">Add to Cart</button>
+        <button class="btn btn-details">View Details</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function addToCart(itemName) {
+    alert(itemName + ' added to cart!');
+  }
+</script>
+
+</body>
+</html>

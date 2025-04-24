@@ -17,7 +17,7 @@
       content: "";
     background: url('images/cover.jpg') no-repeat center center;
     background-size: cover;
-    filter: blur(6px) brightness(0.7);
+    filter: blur(1px) brightness(0.7);
     position: absolute;
     top: 0;
     left: 0;
@@ -55,7 +55,7 @@
   </style>
 </head>
 <body>
-  <!-- Navbar -->
+  
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4 py-3">
     <a class="navbar-brand fw-bold" href="#">FOODBANK HUB</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -79,6 +79,16 @@
         
         <li class="nav-item"><a class="nav-link" href="#">Partners</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Dashboards
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="#">Consumers</a></li>
+            <li><a class="dropdown-item" href="#">Farmers</a></li>
+            <li><a class="dropdown-item" href="#">FoodBank</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
     <div class="d-flex gap-2">
